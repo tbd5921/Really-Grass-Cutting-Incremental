@@ -44,7 +44,7 @@ MAIN.steel = {
 
             x = x.mul(starTreeEff('speed',1)*starTreeEff('speed',2)*starTreeEff('speed',9)*starTreeEff('speed',14))
 
-            x = x.mul(upgEffect('funnyMachine',0)).mul(upgEffect('funnyMachine',2)).mul(upgEffect('funnyMachine',3))
+            x = x.mul(upgEffect('funnyMachine',0)).mul(upgEffect('funnyMachine',2)).mul(upgEffect('funnyMachine',3)).mul(upgEffect('funnyMachine',4))
 
             x = x.mul(upgEffect('dm',1))
 
