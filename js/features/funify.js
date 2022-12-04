@@ -150,6 +150,24 @@ UPGS.funnyMachine = {
                 return x
             },
             effDesc: x => format(x)+"x",
+        }, ,{
+            max: 100,
+
+            title: "Recelerator",
+            desc: `yeah i really don't know what i'm doing here`,
+        
+            res: "fun",
+            icon: ["Icons/Assemblerv2"],
+                        
+            cost: i => Decimal.pow(1.2,i).mul(1e16).ceil(),
+            bulk: i => i.div(1e16).max(1).log(1.2).floor().toNumber()+1,
+        
+            effect(i) {
+                let x = i/10+1
+        
+                return x
+            },
+            effDesc: x => format(x)+"x",
         },
     ],
 }
